@@ -11996,9 +11996,15 @@ body {
   text-align: center;
 }
 
-main {
+.forecast {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 5% 0%;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
