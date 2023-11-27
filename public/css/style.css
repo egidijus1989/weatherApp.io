@@ -11983,6 +11983,9 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #000;
   color: #fff;
   border-color: #fff;
@@ -12006,5 +12009,4 @@ body {
 form {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
