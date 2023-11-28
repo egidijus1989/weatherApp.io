@@ -20,6 +20,14 @@ import ajaxSearch from "./ajaxSearch";
 let searchBox = document.querySelector('.city')
 let searchBtn = document.querySelector('.loadButton')
 
+searchBox.addEventListener('change', (e)=>{
+    e.preventDefault()
+    setTimeout(function() {
+        searchCode(e.target.value)
+        document.querySelector('.forecast').classList.remove('d-none')
+    }, 1000)
+})
+
 async function searchCode(city){
     const response = await fetch(`https://api.meteo.lt/v1/places/${city}/forecasts/long-term`)
     const data = await response.json();
@@ -140,9 +148,6 @@ async function searchCode(city){
                     }
     
 }
-searchBtn.addEventListener('click', ()=>{
-    searchCode(searchBox.value)
-    document.querySelector('.forecast').classList.remove('d-none')
-})
+
 
 export default searchCode

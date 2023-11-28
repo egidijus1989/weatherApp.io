@@ -149,6 +149,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 // }
 var searchBox = document.querySelector('.city');
 var searchBtn = document.querySelector('.loadButton');
+searchBox.addEventListener('change', function (e) {
+  e.preventDefault();
+  setTimeout(function () {
+    searchCode(e.target.value);
+    document.querySelector('.forecast').classList.remove('d-none');
+  }, 1000);
+});
 function searchCode(_x) {
   return _searchCode.apply(this, arguments);
 }
@@ -306,10 +313,6 @@ function _searchCode() {
   }));
   return _searchCode.apply(this, arguments);
 }
-searchBtn.addEventListener('click', function () {
-  searchCode(searchBox.value);
-  document.querySelector('.forecast').classList.remove('d-none');
-});
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (searchCode);
 
 /***/ }),
