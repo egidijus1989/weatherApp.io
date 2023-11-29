@@ -1,20 +1,20 @@
-.card{
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+  .card-body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    background-color: #000;
-    color: #fff;
-    border-color: #fff;
-    .card-body{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+  }
+  .middle {
+    .middle-bottom {
+      h5 {
+        text-align: center;
+      }
     }
-    .middle{
-        .middle-bottom{
-            h5{
-                text-align: center;
-            }
-        }
-    }
+  }
 }

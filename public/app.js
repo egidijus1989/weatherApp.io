@@ -120,13 +120,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //             })
 //     })
 // }
-var searchBox = document.querySelector('.city');
-var searchBtn = document.querySelector('.loadButton');
-searchBox.addEventListener('change', function (e) {
+var searchBox = document.querySelector(".city");
+var searchBtn = document.querySelector(".loadButton");
+searchBox.addEventListener("change", function (e) {
   e.preventDefault();
   setTimeout(function () {
     searchCode(e.target.value);
-    document.querySelector('.forecast').classList.remove('d-none');
+    document.querySelector(".forecast").classList.remove("d-none");
   }, 1000);
 });
 function searchCode(_x) {
@@ -150,7 +150,7 @@ function _searchCode() {
           day = new Date(data.forecastTimestamps[0].forecastTimeUtc);
           hour = day.getHours();
           for (i = 0; i < 7; i++) {
-            document.getElementsByClassName('topleft')[i].innerHTML = data.place.name;
+            document.getElementsByClassName("topleft")[i].innerHTML = data.place.name;
           }
           _i = 0;
         case 11:
@@ -163,116 +163,116 @@ function _searchCode() {
           _context.next = _context.t0 === 0 ? 16 : _context.t0 === 1 ? 18 : _context.t0 === 2 ? 20 : _context.t0 === 3 ? 22 : _context.t0 === 4 ? 24 : _context.t0 === 5 ? 26 : _context.t0 === 6 ? 28 : 30;
           break;
         case 16:
-          document.getElementsByClassName('top-right')[_i].innerHTML = "Sun";
+          document.getElementsByClassName("top-right")[_i].innerHTML = "Sun";
           return _context.abrupt("break", 30);
         case 18:
-          document.getElementsByClassName('top-right')[_i].innerHTML = "Mon";
+          document.getElementsByClassName("top-right")[_i].innerHTML = "Mon";
           return _context.abrupt("break", 30);
         case 20:
-          document.getElementsByClassName('top-right')[_i].innerHTML = "Tue";
+          document.getElementsByClassName("top-right")[_i].innerHTML = "Tue";
           return _context.abrupt("break", 30);
         case 22:
-          document.getElementsByClassName('top-right')[_i].innerHTML = "Wen";
+          document.getElementsByClassName("top-right")[_i].innerHTML = "Wen";
           return _context.abrupt("break", 30);
         case 24:
-          document.getElementsByClassName('top-right')[_i].innerHTML = "Thu";
+          document.getElementsByClassName("top-right")[_i].innerHTML = "Thu";
           return _context.abrupt("break", 30);
         case 26:
-          document.getElementsByClassName('top-right')[_i].innerHTML = "Fri";
+          document.getElementsByClassName("top-right")[_i].innerHTML = "Fri";
           return _context.abrupt("break", 30);
         case 28:
-          document.getElementsByClassName('top-right')[_i].innerHTML = "Sat";
+          document.getElementsByClassName("top-right")[_i].innerHTML = "Sat";
           return _context.abrupt("break", 30);
         case 30:
           _i++;
           _context.next = 11;
           break;
         case 33:
-          document.getElementsByClassName('middle-bottom')[0].innerHTML = data.forecastTimestamps[0].conditionCode;
-          document.getElementsByClassName('middle-bottom')[1].innerHTML = data.forecastTimestamps[24].conditionCode;
-          document.getElementsByClassName('middle-bottom')[2].innerHTML = data.forecastTimestamps[48].conditionCode;
-          document.getElementsByClassName('middle-bottom')[3].innerHTML = data.forecastTimestamps[59].conditionCode;
-          document.getElementsByClassName('middle-bottom')[4].innerHTML = data.forecastTimestamps[67].conditionCode;
-          document.getElementsByClassName('middle-bottom')[5].innerHTML = data.forecastTimestamps[75].conditionCode;
-          document.getElementsByClassName('middle-bottom')[6].innerHTML = data.forecastTimestamps[83].conditionCode;
+          document.getElementsByClassName("middle-bottom")[0].innerHTML = data.forecastTimestamps[0].conditionCode;
+          document.getElementsByClassName("middle-bottom")[1].innerHTML = data.forecastTimestamps[24].conditionCode;
+          document.getElementsByClassName("middle-bottom")[2].innerHTML = data.forecastTimestamps[48].conditionCode;
+          document.getElementsByClassName("middle-bottom")[3].innerHTML = data.forecastTimestamps[59].conditionCode;
+          document.getElementsByClassName("middle-bottom")[4].innerHTML = data.forecastTimestamps[67].conditionCode;
+          document.getElementsByClassName("middle-bottom")[5].innerHTML = data.forecastTimestamps[75].conditionCode;
+          document.getElementsByClassName("middle-bottom")[6].innerHTML = data.forecastTimestamps[83].conditionCode;
           // document.querySelector('.bottom-left').innerHTML = data.forecastTimestamps[0].relativeHumidity;
-          document.getElementsByClassName('bottom-right')[0].innerHTML = data.forecastTimestamps[0].airTemperature + '°C';
-          document.getElementsByClassName('bottom-right')[1].innerHTML = data.forecastTimestamps[24].airTemperature + '°C';
-          document.getElementsByClassName('bottom-right')[2].innerHTML = data.forecastTimestamps[48].airTemperature + '°C';
-          document.getElementsByClassName('bottom-right')[3].innerHTML = data.forecastTimestamps[59].airTemperature + '°C';
-          document.getElementsByClassName('bottom-right')[4].innerHTML = data.forecastTimestamps[67].airTemperature + '°C';
-          document.getElementsByClassName('bottom-right')[5].innerHTML = data.forecastTimestamps[75].airTemperature + '°C';
-          document.getElementsByClassName('bottom-right')[6].innerHTML = data.forecastTimestamps[83].airTemperature + '°C';
+          document.getElementsByClassName("bottom-right")[0].innerHTML = data.forecastTimestamps[0].airTemperature + "°C";
+          document.getElementsByClassName("bottom-right")[1].innerHTML = data.forecastTimestamps[24].airTemperature + "°C";
+          document.getElementsByClassName("bottom-right")[2].innerHTML = data.forecastTimestamps[48].airTemperature + "°C";
+          document.getElementsByClassName("bottom-right")[3].innerHTML = data.forecastTimestamps[59].airTemperature + "°C";
+          document.getElementsByClassName("bottom-right")[4].innerHTML = data.forecastTimestamps[67].airTemperature + "°C";
+          document.getElementsByClassName("bottom-right")[5].innerHTML = data.forecastTimestamps[75].airTemperature + "°C";
+          document.getElementsByClassName("bottom-right")[6].innerHTML = data.forecastTimestamps[83].airTemperature + "°C";
           _i2 = 0;
         case 48:
           if (!(_i2 < 7)) {
             _context.next = 94;
             break;
           }
-          condition = document.getElementsByClassName('middle-bottom')[_i2].textContent;
+          condition = document.getElementsByClassName("middle-bottom")[_i2].textContent;
           _context.t1 = condition;
-          _context.next = _context.t1 === 'clear' ? 53 : _context.t1 === 'partly-cloudy' ? 55 : _context.t1 === 'cloudy-with-sunny-intervals' ? 57 : _context.t1 === 'cloudy' ? 59 : _context.t1 === 'thunder' ? 61 : _context.t1 === 'isolated-thunderstorms' ? 63 : _context.t1 === 'thunderstorms' ? 65 : _context.t1 === 'heavy-rain-with-thunderstorms' ? 67 : _context.t1 === 'light-rain' ? 69 : _context.t1 === 'rain' ? 71 : _context.t1 === 'heavy-rain' ? 73 : _context.t1 === 'light-sleet' ? 75 : _context.t1 === 'sleet' ? 77 : _context.t1 === 'freezing-rain' ? 79 : _context.t1 === 'hail' ? 81 : _context.t1 === 'light-snow' ? 83 : _context.t1 === 'snow' ? 85 : _context.t1 === 'heavy-snow' ? 87 : 89;
+          _context.next = _context.t1 === "clear" ? 53 : _context.t1 === "partly-cloudy" ? 55 : _context.t1 === "cloudy-with-sunny-intervals" ? 57 : _context.t1 === "cloudy" ? 59 : _context.t1 === "thunder" ? 61 : _context.t1 === "isolated-thunderstorms" ? 63 : _context.t1 === "thunderstorms" ? 65 : _context.t1 === "heavy-rain-with-thunderstorms" ? 67 : _context.t1 === "light-rain" ? 69 : _context.t1 === "rain" ? 71 : _context.t1 === "heavy-rain" ? 73 : _context.t1 === "light-sleet" ? 75 : _context.t1 === "sleet" ? 77 : _context.t1 === "freezing-rain" ? 79 : _context.t1 === "hail" ? 81 : _context.t1 === "light-snow" ? 83 : _context.t1 === "snow" ? 85 : _context.t1 === "heavy-snow" ? 87 : 89;
           break;
         case 53:
           if (hour >= 6 && hour <= 18) {
-            document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/sunny.svg';
+            document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/sunny.svg";
           } else {
-            document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/clearMoon.svg';
+            document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/clearMoon.svg";
           }
           return _context.abrupt("break", 91);
         case 55:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/clouds.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/clouds.svg";
           return _context.abrupt("break", 91);
         case 57:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/clouds.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/clouds.svg";
           return _context.abrupt("break", 91);
         case 59:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/clouds.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/clouds.svg";
           return _context.abrupt("break", 91);
         case 61:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/lithning.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/lithning.svg";
           return _context.abrupt("break", 91);
         case 63:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/lithning.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/lithning.svg";
           return _context.abrupt("break", 91);
         case 65:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/lithning.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/lithning.svg";
           return _context.abrupt("break", 91);
         case 67:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/raining.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 69:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/raining.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 71:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/raining.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 73:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/raining.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 75:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/raining.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 77:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/raining.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 79:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/raining.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 81:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/raining.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 83:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/snowing.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/snowing.svg";
           return _context.abrupt("break", 91);
         case 85:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/snowing.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/snowing.svg";
           return _context.abrupt("break", 91);
         case 87:
-          document.getElementsByClassName('card-img-top')[_i2].src = '../public/img/snowing.svg';
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/snowing.svg";
           return _context.abrupt("break", 91);
         case 89:
-          console.log('unknown');
+          console.log("unknown");
           return _context.abrupt("break", 91);
         case 91:
           _i2++;
@@ -301,7 +301,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 var weatherCard = function weatherCard() {
-  return "\n            <div class=\"card-body\">\n                <div>\n                    <h5 class=\"topleft\"></h5>\n                </div>\n                <div>\n                    <h5 class=\"top-right\"></h5>\n                </div>\n            </div>\n            <div class=\"middle\">\n                <div>\n                    <img src=\"\" class=\"card-img-top\" alt=\"...\">\n                </div>\n                <div >\n                    <h2 class=\"middle-bottom text-center\"></h2>\n                </div>\n            </div>\n            <div class=\"card-body\">\n                <div >\n                    <h5 class=\"bottom-left\"></h5>\n                </div>\n                <div >\n                    <h5 class=\"bottom-right\"></h5>\n                </div>\n            </div>\n    ";
+  return "\n            <div class=\"card-body\">\n                <div>\n                    <h5 class=\"topleft\"></h5>\n                </div>\n                <div>\n                    <h5 class=\"top-right\"></h5>\n                </div>\n            </div>\n            <div class=\"middle\">\n                <div>\n                    <img src=\"\" class=\"card-img-top\" alt=\"...\">\n                </div>\n                <div >\n                    <h5 class=\"middle-bottom text-center\"></h2>\n                </div>\n            </div>\n            <div class=\"card-body\">\n                <div >\n                    <h5 class=\"bottom-left\"></h5>\n                </div>\n                <div >\n                    <h5 class=\"bottom-right\"></h5>\n                </div>\n            </div>\n    ";
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (weatherCard);
 

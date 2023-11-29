@@ -1,5 +1,5 @@
-const weatherCard = ()=>{
-    return `
+const weatherCard = () => {
+  return `
             <div class="card-body">
                 <div>
                     <h5 class="topleft"></h5>
@@ -13,7 +13,7 @@ const weatherCard = ()=>{
                     <img src="" class="card-img-top" alt="...">
                 </div>
                 <div >
-                    <h2 class="middle-bottom text-center"></h2>
+                    <h5 class="middle-bottom text-center"></h2>
                 </div>
             </div>
             <div class="card-body">
@@ -24,6 +24,6 @@ const weatherCard = ()=>{
                     <h5 class="bottom-right"></h5>
                 </div>
             </div>
-    `
-}
-export default weatherCard
+    `;
+};
+export default weatherCard;
