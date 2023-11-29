@@ -1,4 +1,4 @@
-import ajaxSearch from "./ajaxSearch";
+// import ajaxSearch from "./ajaxSearch";
 
 // const searchCode = ()=>{
 //     document.querySelector('form').addEventListener('submit', (e)=>{
