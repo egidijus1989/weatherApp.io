@@ -102,79 +102,79 @@ async function searchCode(city) {
       case "clear":
         if (hour >= 6 && hour <= 18) {
           document.getElementsByClassName("card-img-top")[i].src =
-            "/public/img/sunny.svg";
+            "img/sunny.svg";
         } else {
           document.getElementsByClassName("card-img-top")[i].src =
-            "/public/img/clearMoon.svg";
+            "img/clearMoon.svg";
         }
         break;
       case "partly-cloudy":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/clouds.svg";
+          "img/clouds.svg";
         break;
       case "cloudy-with-sunny-intervals":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/clouds.svg";
+          "img/clouds.svg";
         break;
       case "cloudy":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/clouds.svg";
+          "img/clouds.svg";
         break;
       case "thunder":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/lithning.svg";
+          "img/lithning.svg";
         break;
       case "isolated-thunderstorms":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/lithning.svg";
+          "img/lithning.svg";
         break;
       case "thunderstorms":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/lithning.svg";
+          "img/lithning.svg";
         break;
       case "heavy-rain-with-thunderstorms":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/raining.svg";
+          "img/raining.svg";
         break;
       case "light-rain":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/raining.svg";
+          "img/raining.svg";
         break;
       case "rain":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/raining.svg";
+          "img/raining.svg";
         break;
       case "heavy-rain":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/raining.svg";
+          "img/raining.svg";
         break;
       case "light-sleet":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/raining.svg";
+          "img/raining.svg";
         break;
       case "sleet":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/raining.svg";
+          "img/raining.svg";
         break;
       case "freezing-rain":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/raining.svg";
+          "img/raining.svg";
         break;
       case "hail":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/raining.svg";
+          "img/raining.svg";
         break;
       case "light-snow":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/snowing.svg";
+          "img/snowing.svg";
         break;
       case "snow":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/snowing.svg";
+          "img/snowing.svg";
         break;
       case "heavy-snow":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/public/img/snowing.svg";
+          "img/snowing.svg";
         break;
       default:
         console.log("unknown");
