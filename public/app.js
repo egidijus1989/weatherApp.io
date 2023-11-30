@@ -215,61 +215,61 @@ function _searchCode() {
           break;
         case 53:
           if (hour >= 6 && hour <= 18) {
-            document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/sunny.svg";
+            document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/sunny.svg";
           } else {
-            document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/clearMoon.svg";
+            document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/clearMoon.svg";
           }
           return _context.abrupt("break", 91);
         case 55:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/clouds.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/clouds.svg";
           return _context.abrupt("break", 91);
         case 57:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/clouds.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/clouds.svg";
           return _context.abrupt("break", 91);
         case 59:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/clouds.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/clouds.svg";
           return _context.abrupt("break", 91);
         case 61:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/lithning.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/lithning.svg";
           return _context.abrupt("break", 91);
         case 63:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/lithning.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/lithning.svg";
           return _context.abrupt("break", 91);
         case 65:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/lithning.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/lithning.svg";
           return _context.abrupt("break", 91);
         case 67:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/raining.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 69:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/raining.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 71:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/raining.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 73:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/raining.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 75:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/raining.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 77:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/raining.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 79:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/raining.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 81:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/raining.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/raining.svg";
           return _context.abrupt("break", 91);
         case 83:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/snowing.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/snowing.svg";
           return _context.abrupt("break", 91);
         case 85:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/snowing.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/snowing.svg";
           return _context.abrupt("break", 91);
         case 87:
-          document.getElementsByClassName("card-img-top")[_i2].src = "/weatherApp.io/public/img/snowing.svg";
+          document.getElementsByClassName("card-img-top")[_i2].src = "/public/img/snowing.svg";
           return _context.abrupt("break", 91);
         case 89:
           console.log("unknown");

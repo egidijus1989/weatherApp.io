@@ -102,79 +102,79 @@ async function searchCode(city) {
       case "clear":
         if (hour >= 6 && hour <= 18) {
           document.getElementsByClassName("card-img-top")[i].src =
-            "/weatherApp.io/public/img/sunny.svg";
+            "/public/img/sunny.svg";
         } else {
           document.getElementsByClassName("card-img-top")[i].src =
-            "/weatherApp.io/public/img/clearMoon.svg";
+            "/public/img/clearMoon.svg";
         }
         break;
       case "partly-cloudy":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/clouds.svg";
+          "/public/img/clouds.svg";
         break;
       case "cloudy-with-sunny-intervals":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/clouds.svg";
+          "/public/img/clouds.svg";
         break;
       case "cloudy":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/clouds.svg";
+          "/public/img/clouds.svg";
         break;
       case "thunder":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/lithning.svg";
+          "/public/img/lithning.svg";
         break;
       case "isolated-thunderstorms":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/lithning.svg";
+          "/public/img/lithning.svg";
         break;
       case "thunderstorms":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/lithning.svg";
+          "/public/img/lithning.svg";
         break;
       case "heavy-rain-with-thunderstorms":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/raining.svg";
+          "/public/img/raining.svg";
         break;
       case "light-rain":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/raining.svg";
+          "/public/img/raining.svg";
         break;
       case "rain":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/raining.svg";
+          "/public/img/raining.svg";
         break;
       case "heavy-rain":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/raining.svg";
+          "/public/img/raining.svg";
         break;
       case "light-sleet":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/raining.svg";
+          "/public/img/raining.svg";
         break;
       case "sleet":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/raining.svg";
+          "/public/img/raining.svg";
         break;
       case "freezing-rain":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/raining.svg";
+          "/public/img/raining.svg";
         break;
       case "hail":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/raining.svg";
+          "/public/img/raining.svg";
         break;
       case "light-snow":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/snowing.svg";
+          "/public/img/snowing.svg";
         break;
       case "snow":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/snowing.svg";
+          "/public/img/snowing.svg";
         break;
       case "heavy-snow":
         document.getElementsByClassName("card-img-top")[i].src =
-          "/weatherApp.io/public/img/snowing.svg";
+          "/public/img/snowing.svg";
         break;
       default:
         console.log("unknown");
